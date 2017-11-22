@@ -17,7 +17,7 @@ proj_home=$(dirname "$cmd_path")
 sudo mkdir -p /etc/docker/
 sudo tee "/etc/docker/daemon.json" > /dev/null <<-'EOF'
 {
-	"registry-mirrors": ["http://hub-mirror.c.163.com"],
+	"registry-mirrors": ["https://registry.docker-cn.com"],
     "exec-opts": ["native.cgroupdriver=systemd"]    
 }
 EOF
