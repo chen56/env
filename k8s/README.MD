@@ -35,7 +35,7 @@ vagrant ssh
 kubectl get componentstatuses
 ```
 
-## 重来一边
+## 重来一遍
 
 ```bash
 # 删除刚创建的虚拟机
@@ -48,7 +48,13 @@ vagrant up
 
 ### grc.io的国内镜像
 
-`registry.cn-hangzhou.aliyuncs.com/google-containers`
+<https://dev.aliyun.com>
+
+比如：
+
+```bash
+docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/kube-controller-manager-amd64
+‘’‘
 
 ### debug 命令
 
